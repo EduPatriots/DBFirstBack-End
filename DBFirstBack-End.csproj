@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataAccess\" />
+    <Compile Remove="DataAccess\NewFolder1\**" />
+    <Compile Remove="DataAccess\NewFolder\**" />
+    <EmbeddedResource Remove="DataAccess\NewFolder1\**" />
+    <EmbeddedResource Remove="DataAccess\NewFolder\**" />
+    <None Remove="DataAccess\NewFolder1\**" />
+    <None Remove="DataAccess\NewFolder\**" />
   </ItemGroup>
 
   <ItemGroup>
